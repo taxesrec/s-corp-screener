@@ -56,11 +56,11 @@
       <option value="yes">Yes</option>
       <option value="no">No</option>
     </select>
-    <button type="button" onclick="evaluate()">Get Recommendation</button>
+    <button type="button" onclick="getRecommendation()">Get Recommendation</button>
   </form>
   <div class="result" id="resultBox"></div>
   <script>
-    function evaluate() {
+    function getRecommendation() {
       const form = document.forms["screenerForm"];
       const answers = {
         owners: form["owners"].value,
